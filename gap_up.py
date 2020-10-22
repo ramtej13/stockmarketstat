@@ -12,7 +12,8 @@ df_today = df_today.drop(index=0, axis=0)
 df_today = df_today.sort_values("todaySYMBOL",ascending=True)
 
 dictionary = {}
-invest =3000
+total_invest = 20000
+invest =total_invest/4
 list = []
 for i in range(len(df["SYMBOL"].values)):
     high = float(df["HIGH"].values[i].replace(',',''))
