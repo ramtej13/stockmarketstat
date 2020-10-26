@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 lable = ["SYMBOL","OPEN","HIGH","LOW","netinvest", "PREV. CLOSE","LTP","CHNG","%CHNG","VOLUME","VALUE","52Wh","52W","365","30D",]
-df = pd.read_csv("data/yesterday.csv",names=lable)
+df = pd.read_csv("data/yesterday23.csv",names=lable)
 df = df.drop(index=0, axis=0)
 df = df.sort_values("SYMBOL",ascending=True)
 
